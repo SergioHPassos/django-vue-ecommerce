@@ -26,13 +26,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STRIPE_SECRET_KEY = 'sk_test_51KS16cF7fVRwnUN3sgcv8ZKsWgDHm8yN35O2bdsM6ZvFxSQjHW2RyJWICSQ3WH683p6ZVM82UfU64czO6eoZoqNV00oKAA3vqR'
+
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin', 'django.contrib.auth',
     'django.contrib.contenttypes', 'django.contrib.sessions',
     'django.contrib.messages', 'django.contrib.staticfiles', 'rest_framework',
-    'rest_framework.authtoken', 'corsheaders', 'djoser', 'product'
+    'rest_framework.authtoken', 'corsheaders', 'djoser', 'product', 'order'
 ]
 
 CORS_ALLOWED_ORIGIN = [
